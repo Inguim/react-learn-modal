@@ -1,0 +1,40 @@
+.backdrop-blur {
+    backdrop-filter: blur(2px);
+    background-color: #d6d6d670;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.backdrop-blur.in {
+    opacity: 1 !important;
+}
+
+.modal {
+    width: 80%;
+    max-height: 80%;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 0 10px 5px rgb(109, 109, 109);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: 1px solid rgb(212, 30, 30);
+    border-radius: 5px;
+    color: rgb(212, 30, 30);
+    padding: 4px;
+    text-align: center;
+    float: right;
+    width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+}
